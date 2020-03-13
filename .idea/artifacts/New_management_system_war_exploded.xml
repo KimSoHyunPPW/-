@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="New management system:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/New_management_system_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Student information system/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Student information system" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="jsonobjectjar_jb51" />
+          <element id="file-copy" path="C:/apache-tomcat-9.0.17/lib/mysql-connector-java-5.1.7-bin.jar" />
+          <element id="file-copy" path="F:/Java_EE_6/webservices-api-osgi.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

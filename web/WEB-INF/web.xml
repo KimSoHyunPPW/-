@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>学生信息管理系统</display-name>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/404.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/500.jsp</location>
+  </error-page>
+  
+<!--
+  <filter>
+    <description>登陆权限过滤拦截器</description>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>ischool.filter.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/SystemServlet</url-pattern>
+    <url-pattern>/StudentServlet</url-pattern>
+  </filter-mapping>
+-->
+
+
+
+  <servlet>
+    <description>登录</description>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>ischool.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description>系统主页</description>
+    <servlet-name>SystemServlet</servlet-name>
+    <servlet-class>ischool.servlet.SystemServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SystemServlet</servlet-name>
+    <url-pattern>/SystemServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description>学生管理</description>
+    <servlet-name>StudentServlet</servlet-name>
+    <servlet-class>ischool.servlet.StudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentServlet</servlet-name>
+    <url-pattern>/StudentServlet</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>

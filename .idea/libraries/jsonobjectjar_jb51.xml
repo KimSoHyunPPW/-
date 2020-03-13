@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="jsonobjectjar_jb51">
+    <CLASSES>
+      <root url="file://F:/jsonobjectjar_jb51" />
+      <root url="jar://F:/jsonobjectjar_jb51/JSONObject所必须的6个包/json-lib-2.1-jdk15.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://F:/jsonobjectjar_jb51" recursive="false" />
+  </library>
+</component>
